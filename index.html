@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Notes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <h1>Study Notes</h1>
+  <button id="addNoteBtn">+ New Note</button>
+</header>
+
+<section class="note-editor hidden" id="editor">
+  <input type="text" id="noteTitle" placeholder="Note title">
+
+  <textarea id="noteBody" placeholder="Write your note here..."></textarea>
+
+  <div class="editor-actions">
+    <button id="saveNote">Save Note</button>
+    <button id="cancelNote">Cancel</button>
+  </div>
+</section>
+
+<main class="notes-container" id="notesContainer"></main>
+
+<script src="script.js"></script>
+</body>
+</html>
