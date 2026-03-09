@@ -1,0 +1,125 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 30px;
+background:#111827;
+}
+
+.topbar h1{
+margin:0;
+font-size:24px;
+}
+
+#addNoteBtn{
+background:#3b82f6;
+border:none;
+color:white;
+padding:10px 16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+#addNoteBtn:hover{
+background:#2563eb;
+}
+
+.note-editor{
+background:#1f2937;
+padding:20px;
+margin:20px auto;
+width:90%;
+max-width:600px;
+border-radius:8px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.note-editor input{
+padding:10px;
+border:none;
+border-radius:5px;
+font-size:16px;
+}
+
+.note-editor textarea{
+height:120px;
+padding:10px;
+border:none;
+border-radius:5px;
+font-size:14px;
+resize:none;
+}
+
+.editor-actions{
+display:flex;
+gap:10px;
+}
+
+.editor-actions button{
+padding:8px 14px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+#saveNote{
+background:#22c55e;
+color:white;
+}
+
+#cancelNote{
+background:#ef4444;
+color:white;
+}
+
+.notes-container{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.note-card{
+background:#1e293b;
+padding:15px;
+border-radius:8px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.note-card h3{
+margin:0;
+font-size:18px;
+}
+
+.note-card p{
+font-size:14px;
+color:#cbd5f5;
+}
+
+.delete-btn{
+background:#ef4444;
+border:none;
+padding:6px;
+border-radius:5px;
+cursor:pointer;
+color:white;
+}
+
+.hidden{
+display:none;
+}
